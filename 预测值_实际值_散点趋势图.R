@@ -12,3 +12,6 @@ abline(fit, col = "red")
 
 # 添加趋势线图例
 legend("topleft", legend = paste("y=", a, "x", b), col = "red", lty = 1, bty = "n")
+
+p <- summary(fit)$coefficients[, 4][2]  # 提取截距项的p值
+p
