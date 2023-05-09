@@ -10,7 +10,8 @@ colnames(data) <- rownames(data)
 data_matrix <- as.matrix(data)
 
 # 定义自定义颜色
-my_colors <- colorRampPalette(c("#FFFFFF", "#F0E442", "#F08080", "#800000"))
+# 蓝 白 红
+my_colors <- colorRampPalette(c("#0000FF", "#FFFFFF", "#FF0000"))
 
 # 绘制热力图
 heatmap(data_matrix, scale = "column", margins = c(10, 10), 
