@@ -4,6 +4,8 @@
 # 本文件放到当前路径下运行
 # 转换latex项目文件为word文件
 # 本脚本仅提取文字部分，不包含图表公式部分内容以及引用
+# from https://github.com/spiritLHLS/R_picture
+# by spiritlhl
 
 import os
 import re
