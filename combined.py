@@ -2,6 +2,7 @@
 # 本文件放到当前路径下运行
 # 环境安装 pip install python-docx
 # 转换latex项目文件为word文件，原项目目录结构适配 中科院学位论文LATEX 2𝜀 模板 CASthesis v0.2
+# 本脚本仅提取文字部分，不包含图表公式部分内容以及引用
 
 import os
 import re
