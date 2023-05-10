@@ -1,6 +1,9 @@
+# 将项目所有tex文件放到当前路径下
+# 本文件放到当前路径下运行
+# 环境安装 pip install python-docx
+
 import os
 import re
-# pip install python-docx
 from docx import Document
 
 def extract_chapter_names(file_path):
