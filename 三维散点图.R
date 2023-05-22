@@ -23,6 +23,17 @@ x <- rep(1:nrow(data), ncol(data))
 y <- rep(1:ncol(data), each=nrow(data))
 z <- as.vector(as.matrix(data))
 
+# # 设置中文字体-WIN
+# windowsFonts(myfont = windowsFont("SimSun"))
+# par(family = "myfont")
+
+# 设置中文字体（适用于Mac和Linux）
+# install.packages("extrafont")
+library(extrafont)
+font_import()
+loadfonts()
+
+
 # 绘制三维散点图
 scatter3D(x=x, y=y, z=z, colvar=z, bty="g", pch=16, cex=1.5, 
           theta=30, phi=10, xlab="Drugs Combination", ylab="Cells", zlab="Value", cex.lab = 2, cex.axis = 1.6)
